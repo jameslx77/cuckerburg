@@ -2,7 +2,7 @@ package code;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Button extends Frame implements WindowListener,ActionListener {
+public class button extends Frame implements WindowListener,ActionListener {
         TextField text = new TextField(12);
         TextField text2= new TextField(12);
         Button b;
