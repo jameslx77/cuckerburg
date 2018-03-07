@@ -6,6 +6,13 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * This is the main class where all the methods will be.
+ * 
+ * @author James Li-Xu
+ * @author Benjamin Shapiro
+ */
+
 public class Game {
 
 	private ArrayList<String> listOfPrompts;
