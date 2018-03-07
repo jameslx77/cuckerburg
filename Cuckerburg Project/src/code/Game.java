@@ -49,9 +49,20 @@ public class Game {
 			prompts.add(listOfPrompts.get(i));
 		}
 	}
-	
-	
-	
-	
-	
+
+	public ArrayList<String> getListOfPrompts() {
+		return listOfPrompts;
+	}
+
+	public void setListOfPrompts(ArrayList<String> listOfPrompts) {
+		this.listOfPrompts = listOfPrompts;
+	}
+
+	public ArrayList<String> getPrompts() {
+		return prompts;
+	}
+
+	public void setPrompts(ArrayList<String> prompts) {
+		this.prompts = prompts;
+	}
 }
