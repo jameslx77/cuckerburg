@@ -34,8 +34,7 @@ public class GUI extends JFrame{
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setResizable(false);
 		frame.setLocationRelativeTo(null);
-		
-		frame.add(new button("Cuck"));
+
 	}
 
 	public GUI() {

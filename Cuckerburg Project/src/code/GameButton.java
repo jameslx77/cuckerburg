@@ -3,7 +3,7 @@ package code;
 import java.awt.*;
 import java.awt.event.*;
 
-public class button extends Frame implements WindowListener, ActionListener {
+public class GameButton extends Frame implements WindowListener, ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	private int numClicks = 0;
@@ -14,12 +14,12 @@ public class button extends Frame implements WindowListener, ActionListener {
 	Button c;
 
 	public static void main(String[] args) {
-		button myWindow = new button("Cucks");
+		GameButton myWindow = new GameButton("Cucks");
 		myWindow.setSize(200, 100);
 		myWindow.setVisible(true);
 	}
 
-	public button(String title) {
+	public GameButton(String title) {
 
 		super(title);
 		setLayout(new FlowLayout());
