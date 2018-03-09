@@ -7,6 +7,7 @@ public class GameButton extends Frame implements WindowListener, ActionListener 
 
 	private static final long serialVersionUID = 1L;
 	private int numClicks = 0;
+	private int numClicks2=0;
 	
 	TextField text = new TextField(12);
 	TextField text2 = new TextField(12);
@@ -36,8 +37,12 @@ public class GameButton extends Frame implements WindowListener, ActionListener 
 
 	public void actionPerformed(ActionEvent e) {
 		numClicks++;
-		text2.setText("You got " + numClicks + " votes!");
+		
 		text.setText("You got " + numClicks + " votes!");
+	}
+	public void buttontwo(ActionEvent oe){
+		numClicks++;
+		text2.setText("You got " + numClicks + " votes!");
 	}
 
 	public void windowClosing(WindowEvent e) {
