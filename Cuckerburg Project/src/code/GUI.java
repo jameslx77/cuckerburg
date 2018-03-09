@@ -2,6 +2,7 @@ package code;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -39,9 +40,9 @@ public class GUI extends JFrame implements ActionListener {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setResizable(false);
 		frame.setLocationRelativeTo(null);
-
+		
 		JPanel panel = new JPanel();
-		panel.setBackground(Color.PINK);
+		panel.setBackground(Color.getHSBColor((float) 0.6,(float) 0.6,(float) .8));
 		frame.add(panel);
 
 		voteLeft = new JButton("Vote for the left");
@@ -50,11 +51,16 @@ public class GUI extends JFrame implements ActionListener {
 		voteRight.setBounds(60, 100, 40, 20);
 		voteLeft.setVisible(true);
 		voteRight.setVisible(true);
-
+		final TextField prompt=new TextField(30);
+		panel.add(prompt);
+		prompt.setEditable(false);
 		final TextField left = new TextField(12);
 		final TextField right = new TextField(12);
 		panel.add(left);
 		panel.add(right);
+		left.setEditable(false);
+		right.setEditable(false);
+		
 
 		voteLeft.addActionListener(this);
 		voteRight.addActionListener(this);
@@ -84,6 +90,7 @@ public class GUI extends JFrame implements ActionListener {
 		panel.add(voteLeft);
 		panel.add(voteRight);
 	}
+	
 
 	public void actionPerformed(ActionEvent e) {
 
